@@ -1,6 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Privacy Page";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p id="openPop">open 3D</p>
+<button id="createBox" onclick="createBox()">createBox</button>
+
+<div id="threeBuild"></div>
+<div class="threePop" style="display: none;">
+    <button>close</button></br>
+    <canvas id="mycanvas"></canvas>
+</div>
+
+<script type="module" src="../js/3drender.js"></script>
+<script src="../js/privacy.js"></script>
